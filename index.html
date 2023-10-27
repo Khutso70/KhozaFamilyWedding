@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SA ID App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="CONTENT">
+      <div class="circle"><h1>SA</h1></div>
+      <div class="name">
+        <h6>Name:</h6>
+        <h6 class="small">NameisName</h6>
+      </div>
+      <div class="surname">
+        <h6>SurName:</h6>
+        <h6 class="small">Surnameis</h6>
+      </div>
+      <div class="gender">
+        <h6>Sex:</h6>
+        <h6 class="small">M</h6>
+      </div>
+      <div class="idNumber">
+        <h6>IDNUMER:</h6>
+        <h6 class="small">0123456789012</h6>
+      </div>
+      <div class="Pic"></div>
+      <div class="nationality">
+        <h6>Nationality:</h6>
+        <h6 class="small">South Africa</h6>
+      </div>
+      <div class="dateOfBirth">
+        <h6>Date Of Brth:</h6>
+        <h6 class="small">15/JAN/1999</h6>
+      </div>
+      <div class="countryOfBirth">
+        <h6>Country Of Birth:</h6>
+        <h6 class="small">South Africa</h6>
+      </div>
+      <div class="status">
+        <h6>Status:</h6>
+        <h6 class="small">Citizen</h6>
+      </div>
+      <div class="title">
+        <h4>
+          REPUBLIC OF SOUTH AFRICA <br />
+          IDENTITY DOCUMENT
+        </h4>
+      </div>
+      <div class="signaturetop">
+        <h6>Signature:</h6>
+      </div>
+
+      <div class="signature">
+        <h6 class="small">XXX</h6>
+      </div>
+      <div class="id-logo">
+        <h1 class="mx-2"><em>iD</em></h1>
+      </div>
+      <div class="sa-flag"></div>
+      <div class="blackdot1"></div>
+      <div class="blackdot2"></div>
+      <div class="blackdot3"></div>
+      <div class="blackdot4"></div>
+      <div class="blackdot5"></div>
+      <div class="id-card"></div>
+      <!-- Modal -->
+    </div>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                Mabhunda
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-xl">
+      <div class="container text-center">
+        <div class="row align-items-center">
+          <div class="col-lg-2 col mt-5 justify-items-center">
+            <button
+              type="button"
+              class="btn btn-primary capture"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Generate Info
+            </button>
+          </div>
+          <div class="col-lg-9 col idDisplay">
+            <div class="img"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
